@@ -7,7 +7,7 @@
                 margin: 0;
                 font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             }
-            .miamistatue, .yuvalportrait, .parallax3{
+            .miamistatue, .yuvalportrait, .floweryhome{
                 background-attachment: fixed;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -20,7 +20,10 @@
             .yuvalportrait {
                 background-image: url("https://i.imgur.com/J8pFim1.jpg");
                 height: 100%;
-                background-clip: border-box;
+            }
+            .floweryhome {
+                background-image: url("https://i.imgur.com/vhFMJHZ.jpg");
+                height: 100%;
             }
             .menuitems{
                 background-color: seashell;
@@ -83,6 +86,48 @@
                 font-size: 25px;
                 letter-spacing: 8px;
             }
+            nav{
+                position: relative;
+                top: 35%;
+                height: 70px;
+            }
+            nav ul{
+                float: right;
+                margin-right: 30px;
+            }
+            nav .logo{
+                position: relative;
+                left: 47%;
+                display: inline-block;
+            }
+            nav .logo a{
+                color: white;
+                display: block;
+                opacity: 90%;
+                padding: 0 0px;
+                margin: 0;
+                font-size: 20px;
+                background: rgba(111, 101, 87, 1);
+                transition: .5s;
+            }
+            nav .logo a:hover, nav .logo a.active{
+                color: #23dbdb;
+                background: #38545e;
+            }
+            nav ul{
+                position: relative;
+                left: 47%;
+                top: 20%;
+                border-top: 3px solid #23dbdb;
+                opacity: 0;
+                visibility: hidden;
+            }
+            nav ul li:hover > ul{
+                top: 70px;
+                opacity: 1;
+                visibility: visible;
+                transition: .3s linear;
+            }
         </style>
     </head>
 </html>
@@ -96,20 +141,37 @@
     <div class="menuitems">
         <h3>welcome to my e-space.</h3>
         <h2>my name is Yuval (he / him / his).</h2>
-        <h2>I am a musician and coder who lives for art: moments when "reality" ends and life begins.</h2>
+        <h2>I am a musician and coder, and I live for art: moments when "reality" ends and life begins.</h2>
+    </div>
+
+    <div class="floweryhome">
+        <nav>
+            <label class="logo">
+                <a href="#">
+                    <img src="https://i.imgur.com/X9hO5dN.png" width=91 height=65></img>
+                </a>
+            </label>
+            <ul>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Code</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Miscellaneous</a></li>
+                <li><a href="#">Where to find me</a></li>
+            </ul>
+        </nav>
     </div>
 
     <div class="yuvalportrait">
         <div class="portraitcaption">
             <span class="border">
-                
+                I study computer science at Duke University, <br>and will complete my second software engineering internship at Google this coming summer.
             </span>
         </div>
     </div>
 
     <div class="menuitems">
         <h2>
-            I study computer science at Duke University, <br>and will complete my second software engineering internship at Google this coming summer.
+            
         </h2>
     </div>
 
