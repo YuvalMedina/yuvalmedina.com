@@ -4,33 +4,114 @@
         <style>
             body,html{
                 height: 100%;
-                background-color: rebeccapurple;
+                margin: 0;
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             }
-            .parallax{
-                background-image: url("Miami_Little_Haiti_Flowery_House.jpeg");
-                height: 100%;
-
+            .miamistatue, .yuvalportrait, .parallax3{
                 background-attachment: fixed;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
             }
+            .miamistatue {
+                background-image: url("https://i.imgur.com/lDdObsM.jpg");
+                height: 100%;
+            }
+            .yuvalportrait {
+                background-image: url("https://i.imgur.com/J8pFim1.jpg");
+                height: 100%;
+                background-clip: border-box;
+            }
             .menuitems{
                 background-color: seashell;
+                opacity: 40%;
                 height: 200px;
+                padding-left: 200px;
+                padding-right: 200px;
             }
             h3 {
-                font: 20px "Lato", sans-serif;
+                font-size: 25px;
+                color: navy;
+                font-weight: 325;
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                letter-spacing: 6px;
+            }
+            h2 {
+                font-size: 20px;
+                color: navy;
+                font-weight: 400;
+                text-align: center;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                letter-spacing: 3px;
+            }
+            p {
+                font-size: 15px;
+                color:rgba(83, 78, 78, 1);
+                font-weight: 400;
+                text-align: center;
+            }
+            .header {
+                position: absolute;
+                left: 0%;
+                top: 50%;
+                width: 100%;
+                text-align: center;
+                color: rgba(0, 0, 0, 0);
+            }
+            .header span.border {
+                background-color:rgba(83, 78, 78, 0.418);
+                color: #fff;
+                padding: 10px;
+                font-size: 25px;
+                letter-spacing: 8px;
+            }
+            .portraitcaption {
+                position: relative;
+                left: 0%;
+                top: 50%;
+                width: 100%;
+                text-align: center;
+                color: rgba(0, 0, 0, 0);
+            }
+            .portraitcaption span.border {
+                background-color:rgba(83, 78, 78, 0.418);
+                color: #fff;
+                padding: 10px;
+                font-size: 25px;
+                letter-spacing: 8px;
             }
         </style>
     </head>
 </html>
 <body>
-    <div class="parallax"></div>
-
-    <div class="menuitems">
-        <h3 style="text-align: center;">My Work</h3>
+    <div class="miamistatue">
+        <div class="header">
+            <span class="border">HELLO.</span>
+        </div>
     </div>
 
-    <div class="parallax"></div>
+    <div class="menuitems">
+        <h3>welcome to my e-space.</h3>
+        <h2>my name is Yuval (he / him / his).</h2>
+        <h2>I am a musician and coder who lives for art: moments when "reality" ends and life begins.</h2>
+    </div>
+
+    <div class="yuvalportrait">
+        <div class="portraitcaption">
+            <span class="border">
+                
+            </span>
+        </div>
+    </div>
+
+    <div class="menuitems">
+        <h2>
+            I study computer science at Duke University, <br>and will complete my second software engineering internship at Google this coming summer.
+        </h2>
+    </div>
+
+    <div class="miamistatue"></div>
 </body>
