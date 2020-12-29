@@ -46,6 +46,14 @@ h2 {
     padding-bottom: 8px;
     letter-spacing: 3px;
 }
+h4 {
+    font-size: 20px;
+    color: rgb(212, 193, 169);
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 1px;
+}
 p {
     font-size: 15px;
     color:rgba(83, 78, 78, 1);
@@ -85,42 +93,48 @@ p {
 nav{
     position: relative;
     top: 35%;
+    left: 47%;
     height: 70px;
 }
-nav ul{
-    float: right;
-    margin-right: 30px;
-}
-nav .logo{
+nav .navmenu{
     position: relative;
-    left: 47%;
     display: inline-block;
 }
-nav .logo a{
-    color: white;
+nav .navmenu a img{
     display: block;
     opacity: 90%;
     padding: 0 0px;
     margin: 0;
-    font-size: 20px;
-    background: rgba(111, 101, 87, 1);
+    background: rgb(75, 68, 59);
     transition: .5s;
+    -webkit-transition: -webkit-transform .4s ease-in-out;
 }
-nav .logo a:hover, nav .logo a.active{
-    color: #23dbdb;
+nav .navmenu a img:hover, nav .navmenu a img.active{
     background: #38545e;
+    rotate: 90%;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+}
+nav .navmenu:hover ~ ul li, nav .navmenu.active ~ ul li{
+    opacity: 90%;
+    transition: .5s;
 }
 nav ul{
     position: relative;
-    left: 47%;
-    top: 20%;
-    border-top: 3px solid #23dbdb;
-    opacity: 0;
-    visibility: hidden;
+    left: -4.5%;
+    margin: 0;
 }
-nav ul li:hover > ul{
-    top: 70px;
-    opacity: 1;
-    visibility: visible;
-    transition: .3s linear;
+nav ul li{
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border-bottom: 1px solid #042331;
+    list-style-type: none;
+    background-color: #38545e;
+    border-top: none;
+    opacity: 0%;
+}
+nav ul li a, nav ul li a.visited{
+    text-decoration: none;
+    font-size: 20px;
 }
