@@ -109,13 +109,13 @@ nav .navmenu a img{
     transition: .5s;
     -webkit-transition: -webkit-transform .4s ease-in-out;
 }
-nav .navmenu a img:hover, nav .navmenu a img.active{
+nav:hover .navmenu a img{
     background: #38545e;
     rotate: 90%;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
 }
-nav .navmenu:hover ~ ul li, nav .navmenu.active ~ ul li{
+nav:hover ul li{
     opacity: 90%;
     transition: .5s;
 }
