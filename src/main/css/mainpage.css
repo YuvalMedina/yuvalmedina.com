@@ -3,7 +3,7 @@ body,html{
     margin: 0;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.miamistatue, .yuvalportrait, .floweryhome{
+.miamistatue, .yuvalportrait, .floweryhome, .tetouanstreet{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,14 +14,20 @@ body,html{
     height: 100%;
 }
 .yuvalportrait {
+    position: relative;
     background-image: url("https://i.imgur.com/J8pFim1.jpg");
+    background-position-y: 20%;
     height: 100%;
 }
 .floweryhome {
     background-image: url("https://i.imgur.com/vhFMJHZ.jpg");
     height: 100%;
 }
-.menuitems{
+.tetouanstreet {
+    background-image: url("https://i.imgur.com/kdUHHPL.jpg");
+    height: 100%;
+}
+.textblock{
     background-color: seashell;
     opacity: 40%;
     height: 200px;
@@ -78,21 +84,20 @@ p {
 .portraitcaption {
     position: relative;
     left: 0%;
-    top: 50%;
+    top: 10%;
     width: 100%;
     text-align: center;
-    color: rgba(0, 0, 0, 0);
 }
 .portraitcaption span.border {
     background-color:rgba(83, 78, 78, 0.418);
-    color: #fff;
-    padding: 10px;
+    color: rgb(245, 225, 225);
+    position: relative;
     font-size: 25px;
     letter-spacing: 8px;
 }
 nav{
     position: relative;
-    top: 35%;
+    top: 20%;
     left: 47%;
     height: 70px;
 }
@@ -137,4 +142,19 @@ nav ul li{
 nav ul li a, nav ul li a.visited{
     text-decoration: none;
     font-size: 20px;
+}
+.copyrightbox {
+    position: relative;
+    left: 0%;
+    top: 90%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(0, 0, 0, 0);
+    color:rgb(216, 91, 195);
+}
+.copyrightbox span.copyright {
+    position: relative;
+    font-size: 13px;
+    letter-spacing: 1px;
 }
