@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../css/codepage.css" media="screen">
+        <script type="text/javascript" src="../js/codepage.js"></script>
     </head>
 </html>
 <body>
@@ -11,11 +12,12 @@
     <div class="header">
         <span class="border">my code</span>
     </div>
-    <div class="code" id="c1">
-        <span class="border"><h2>Tetration Value Animation, inspired by <a href="https://youtu.be/elQVZLLiod4" target="_blank">3Blue1Brown</a></h2></span>
-        <script src="https://gist.github.com/YuvalMedina/947880787357fe8d372c0d17cf1b0dc7.js"></script>
-    </div>
-    <div class="animation" id="a1">
-
+    <div class="codebox">
+        <div class="code" id="c1">
+            <span class="border"><h2>Tetration Value Animation, inspired by <a href="https://youtu.be/elQVZLLiod4" target="_blank">3Blue1Brown</a></h2></span>
+            <script src="https://gist.github.com/YuvalMedina/947880787357fe8d372c0d17cf1b0dc7.js"></script>
+        </div>
+        <div class="animation" onclick="javascript:loadGlslAnimation(this, 'https://gist.githubusercontent.com/YuvalMedina/947880787357fe8d372c0d17cf1b0dc7/raw/b3bb9637a40840ef22cfe9b34b52ca586446718b/TetrationValueAnimation.frag')" id="a1">
+        </div>
     </div>
 </body>

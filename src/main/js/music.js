@@ -7,7 +7,7 @@ for (i = 0; i < buttons.length; i++) {
     var videoId = 'v' + this.id;
     var content = document.getElementById(videoId);
     var videoObjects = content.children;
-    videoObjects.array.forEach(element => {
+    videoObjects.forEach(element => {
         if (element.style.maxHeight){
             element.style.maxHeight = null;
         } else {

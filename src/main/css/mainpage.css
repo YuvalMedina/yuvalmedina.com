@@ -35,12 +35,12 @@ body,html{
     padding-right: 200px;
 }
 h3 {
-    font-size: 25px;
+    font-size: 23px;
     color: navy;
     font-weight: 325;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 4px;
+    padding-bottom: 5px;
     letter-spacing: 6px;
 }
 h2 {
