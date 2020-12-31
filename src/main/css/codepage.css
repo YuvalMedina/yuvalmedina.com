@@ -53,19 +53,6 @@ h4 {
     letter-spacing: 8px;
     word-spacing: 10px;
 }
-.homebox{
-    position: absolute;
-    top: 2%;
-    left: 0%;
-    width: 100%;
-    text-align: center;
-    color: rgba(0, 0, 0, 0);
-}
-.homebox a h4 span.homelink{
-    background-color: rgba(150, 142, 142, 0);
-    transition: .5s;
-    padding: 10px;
-}
 .codebox{
     position: relative;
     vertical-align: top;
@@ -90,7 +77,7 @@ h4 {
     display: inline-block;
     vertical-align: top;
 }
-.animation{
+canvas.animation{
     height: 400px;
     left: 50%;
     width: 40%;
