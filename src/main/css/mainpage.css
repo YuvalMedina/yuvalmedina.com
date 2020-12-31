@@ -84,7 +84,7 @@ p {
 .portraitcaption {
     position: relative;
     left: 0%;
-    top: 10%;
+    top: 40%;
     width: 100%;
     text-align: center;
 }
@@ -96,11 +96,12 @@ p {
     letter-spacing: 8px;
 }
 nav{
-    position: relative;
-    top: 20%;
-    left: 47%;
+    z-index: 100;
+    position: fixed;
+    top: 5%;
+    left: 5%;
     height: 70px;
-    width: 50%;
+    width: 20%;
 }
 nav .navmenu{
     position: relative;
@@ -111,7 +112,7 @@ nav .navmenu a img{
     opacity: 90%;
     padding: 0 0px;
     margin: 0;
-    background: rgb(75, 68, 59);
+    background: none;
     transition: .5s;
     -webkit-transition: -webkit-transform .4s ease-in-out;
 }
