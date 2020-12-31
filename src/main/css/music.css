@@ -80,13 +80,16 @@ h4 {
     padding-block-end: 30px;
     display: inline-block;
     vertical-align: top;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 .musicbox .video iframe, .musicbox .video object, .musicbox .video embed {
     position:relative;
     margin: 0;
     width: 100%;
     height: 300px;
-    /*max-height: 0;
+    max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;*/
+    transition: max-height 0.2s ease-out;
   }
