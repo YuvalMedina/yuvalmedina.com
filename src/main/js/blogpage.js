@@ -1,4 +1,4 @@
-var blogUrl = "https://gist.githubusercontent.com/YuvalMedina/07e6be3d9cb35e60a708ae92d955298a/raw/7fa5176456a9fbd3da8cb8e7b8ff7c6ccb80e8d2/yuvalmedinaBlogs.txt"
+var blogUrl = "https://gist.githubusercontent.com/YuvalMedina/07e6be3d9cb35e60a708ae92d955298a/raw/yuvalmedinaBlogs.txt"
 var request = new XMLHttpRequest();
 
 // fills blogs from blogs submitted on my git gist. link provided above
