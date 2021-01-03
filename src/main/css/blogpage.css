@@ -99,3 +99,11 @@ p.time{
     display: inline-block;
     top: 40%;
 }
+.empty{
+    position: relative;
+    display: inline-block;
+    top: 40%;
+    height: 10%;
+    width: 100%;
+    background-color: rgba(83, 78, 78, 0.0);
+}

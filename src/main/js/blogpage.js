@@ -58,5 +58,13 @@ function fillBlogs(blogData){
         counter++;
     }
 
+    fillEmpty();
+
     console.log('blogs filled:' + counter);
+}
+
+function fillEmpty(){
+    var emptyDiv = document.createElement("div");
+    emptyDiv.className = "empty";
+    document.body.appendChild(emptyDiv);
 }
