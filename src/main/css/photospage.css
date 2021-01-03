@@ -29,7 +29,9 @@ h2 {
 }
 h2.caption{
     background-color: rgba(128, 94, 0, 0.356);
-    color:rgb(70, 57, 57)
+    color:rgb(70, 57, 57);
+    font-size: 19px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 h4 {
     font-size: 25px;
