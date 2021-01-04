@@ -5,13 +5,15 @@ class floatObj{
         this.floatElmt = floatElmt;
         this.x = x;
         this.y = y;
+        this.direction = Math.floor(Math.random()*8);
     }
 }
 
-var xMin;
+var xMin=0;
 var xMax;
 var yMin;
 var yMax;
+var moveby = 1;
 
 let floatObjs = [];
 window.addEventListener('load', function(){
@@ -21,6 +23,7 @@ window.addEventListener('load', function(){
         floatObjs.push(new floatObj(elmt, elmt.offsetLeft, elmt.offsetTop));
     }
     setBoundaries();
+    positionTZero();
     moveFloatObjs();
 });
 
@@ -29,10 +32,22 @@ function setBoundaries(){
     var absOffset = cumulativeOffset(parent);
     var width = parent.offsetWidth;
     var height = parent.offsetHeight;
-    xMin = absOffset.left;
     xMax = xMin + width;
     yMin = absOffset.top;
     yMax = yMin + height;
+}
+
+function positionTZero(){
+    for(var i = 0; i < floatObjs.length; i++){
+        var elmt = floatObjs[i].floatElmt;
+        var x = Math.random()*(xMax-xMin)+xMin;
+        var y = Math.random()*(yMax-yMin)+yMin;
+        
+        elmt.style.left = x+"px";
+        elmt.style.top = y+"px";
+        floatObjs[i].x = x;
+        floatObjs[i].y = y;
+    }
 }
 
 function moveFloatObjs(){
@@ -40,72 +55,77 @@ function moveFloatObjs(){
         var elmt = floatObjs[i].floatElmt;
         var x = floatObjs[i].x;
         var y = floatObjs[i].y;
-        xy_noise = noise(x, y);
-        var delta = getDelta(x, y, xy_noise);
+        var direction = floatObjs[i].direction;
+        noise = Math.random();
+        var delta = getDelta(x, y, noise, direction);
 
-        var new_x = elmt.offsetLeft + delta.xDelta;
-        var new_y = elmt.offsetTop + delta.yDelta;
+        var new_x = elmt.offsetLeft + delta.xDelta*moveby;
+        var new_y = elmt.offsetTop + delta.yDelta*moveby;
+        var new_dir = delta.direction;
 
         floatObjs[i].x = new_x;
         floatObjs[i].y = new_y;
-        elmt.style.left = new_x;
-        elmt.style.top = new_y;
+        floatObjs[i].direction = new_dir;
+        elmt.style.left = new_x+"px";
+        elmt.style.top = new_y+"px";
     }
     setTimeout('moveFloatObjs()',10);
 }
 
-function getXDelta(x, y, noise){
+function getDelta(x, y, noise, direction){
     let xDeltas = [];
     let yDeltas = [];
+    let change = noise<0.5? -1 : 1;
     let choose = 0;
-    if(x == xMin && y == yMin){
+    if(x <= xMin+moveby && y <= yMin+moveby){
         xDeltas = [1,1,0];
         yDeltas = [0,1,1];
-        choose = floor(noise*3);
+        choose = direction+change % 3;
     }
-    else if(x == xMin && y == yMax){
+    else if(x <= xMin+moveby && y >= yMax-moveby){
         xDeltas = [0,1,1];
         yDeltas = [-1,-1,0];
-        choose = floor(noise*3);
+        choose = direction+change % 3;
     }
-    else if(x == xMax && y == yMin){
+    else if(x >= xMax-moveby && y <= yMin+moveby){
         xDeltas = [-1,-1,0];
         yDeltas = [0,1,1];
-        choose = floor(noise*3);
+        choose = direction+change % 3;
     }
-    else if(x == xMax && y == yMax){
+    else if(x >= xMax-moveby && y >= yMax-moveby){
         xDeltas = [-1,-1,0];
         yDeltas = [0,-1,-1];
-        choose = floor(noise*3);
+        choose = direction+change % 3;
     }
-    else if(x == xMin){
+    else if(x <= xMin+moveby){
         xDeltas = [0,1,1,1,0];
         yDeltas = [-1,-1,0,1,1];
-        choose = floor(noise*5);
+        choose = direction+change % 5;
     }
-    else if(x == xMax){
+    else if(x >= xMax-moveby){
         xDeltas = [0,-1,-1,-1,0];
         yDeltas = [-1,-1,0,1,1];
-        choose = floor(noise*5);
+        choose = direction+change % 5;
     }
-    else if(y == yMin){
+    else if(y <= yMin+moveby){
         xDeltas = [-1,-1,0,1,1];
         yDeltas = [0,1,1,1,0];
-        choose = floor(noise*5);
+        choose = direction+change % 5;
     }
-    else if(y == yMax){
+    else if(y >= yMax-moveby){
         xDeltas = [-1,-1,0,1,1];
         yDeltas = [0,-1,-1,-1,0];
-        choose = floor(noise*5);
+        choose = direction+change % 5;
     }
     else{
         xDeltas = [1,1,1,0,-1,-1,-1,0];
         yDeltas = [-1,0,1,1,1,0,-1,-1];
-        choose = floor(noise*8);
+        choose = direction+change % 8;
     }
     return {
         xDelta : xDeltas[choose],
-        yDelta : yDeltas[choose]
+        yDelta : yDeltas[choose],
+        direction : choose
     };
 }
 

@@ -86,5 +86,9 @@ input{
 textarea{
     position: relative;
     width: 90%;
+    margin-bottom: 10px;
+}
+button.submitform{
+    position: relative;
     margin-bottom: 50px;
 }
