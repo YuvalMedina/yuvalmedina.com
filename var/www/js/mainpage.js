@@ -32,9 +32,9 @@ function setBoundaries(){
     var absOffset = cumulativeOffset(parent);
     var width = parent.offsetWidth;
     var height = parent.offsetHeight;
-    xMax = xMin + width;
+    xMax = xMin + width - 100;
     yMin = absOffset.top;
-    yMax = yMin + height;
+    yMax = yMin + height - 100;
 }
 
 function positionTZero(){
