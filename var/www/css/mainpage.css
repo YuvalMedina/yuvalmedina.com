@@ -63,7 +63,7 @@ h4 {
 }
 h5{
     font-size: 20px;
-    color: rgb(110, 64, 219);
+    color: rgb(141, 24, 73);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     letter-spacing: 2px;
@@ -172,5 +172,5 @@ nav .navmenu ul li a, nav .navmenu ul li a.visited{
 }
 span.float{
     position: absolute;
-    background-color: rgba(83, 78, 78, 0.418);
+    background-color: rgba(88, 122, 115, 0.7);
 }
