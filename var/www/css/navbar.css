@@ -28,3 +28,15 @@ ul{
 li{
     width: 100%;
 }
+.my-nav-list li div.border{
+    background-color: rgba(69,89,99,0);
+    height: 138%;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.my-nav-list li div.border:hover{
+    background-color: rgba(99, 69, 87, 0.8);
+}
+.my-nav-list li div.border a, .my-nav-list li div.border a:hover, .my-nav-list li div.border a.active{
+    text-decoration: none;
+}

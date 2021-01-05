@@ -12,6 +12,8 @@ body,html{
 .miamistatue {
     background-image: url("https://i.imgur.com/lDdObsM.jpg");
     height: 100%;
+    max-width: 100%;
+    left: 0%;
 }
 .yuvalportrait {
     position: relative;
@@ -145,4 +147,23 @@ li{
 span.float{
     position: absolute;
     background-color: rgba(34, 38, 49, 0.96);
+    transition: 0.3s;
+}
+span.float:hover{
+    background-color: rgba(29, 42, 78, 0.96)
+}
+span.float a, span.float a:hover, span.float a.active{
+    text-decoration: none;
+}
+.textblock div.border{
+    background-color:rgba(83, 78, 78, 0);
+    margin: auto;
+    width: 35%;
+    transition: 0.3s;
+}
+.textblock div.border:hover{
+    background-color:rgba(83, 78, 78, 0.8);
+}
+.textblock div.border a, .textblock div.border a:hover, .textblock div.border a.active{
+    text-decoration: none;
 }

@@ -31,6 +31,8 @@ var yMax;
 var moveBy = 1;
 var drawing = false;
 
+timeout = 300;
+
 let floatObjs = [];
 window.addEventListener('load', function(){
     floatElmts = document.getElementsByClassName("float");
@@ -49,11 +51,7 @@ window.addEventListener('load', function(){
         window.addEventListener('resize', redraw, true);
     }
     // stop elements from moving upon hover
-    for(var i = 0; i < floatElmts.length; i++){
-        var elmt = floatElmts[i];
-        elmt.addEventListener('mouseenter', stopmoving);
-        elmt.addEventListener('mouseleave', startmoving);
-    }
+    //addMouseListeners();
 });
 
 function stopdrawing(timeout){
@@ -67,7 +65,7 @@ function stopmoving(){
 
 function startmoving(){
     drawing = true;
-    moveFloatObjs();
+    setTimeout('moveFloatObjs()',5000);
 }
 
 function startup(){
@@ -78,10 +76,9 @@ function startup(){
 }
 
 function redraw(){
-    stopdrawing(50);
+    stopdrawing(8000);
     setBoundaries();
     positionTZero();
-    moveFloatObjs();
 }
 
 function setBoundaries(){
@@ -106,7 +103,47 @@ function positionTZero(){
     }
 }
 
+function identity(){
+    return;
+}
+
+function moveAndSetOpacity(){
+    positionTZero();
+    for(var i = 0; i < floatObjs.length; i++){
+        var element = floatObjs[i].floatElmt;
+        element.style.opacity = 1;
+    }
+    //setTimeout('addMouseListenersAndMove()',timeout);
+    if(drawing){setTimeout('moveFloatObjs()', 7000);}
+}
+
+/*function addMouseListenersAndMove(){
+    for(var i = 0; i < floatObjs.length; i++){
+        var elmt = floatObjs[i].floatElmt;
+        elmt.addEventListener('mouseenter', stopmoving);
+        elmt.addEventListener('mouseleave', startmoving);
+    }
+    setTimeout('moveFloatObjs()', 7000);
+}
+
+function addMouseListeners(){
+    for(var i = 0; i < floatObjs.length; i++){
+        var elmt = floatObjs[i].floatElmt;
+        elmt.addEventListener('mouseenter', stopmoving);
+        elmt.addEventListener('mouseleave', startmoving);
+    }
+}*/
+
 function moveFloatObjs(){
+    if(!drawing) return;
+    for(var i = 0; i < floatObjs.length; i++){
+        var element = floatObjs[i].floatElmt;
+        element.style.opacity = 0;
+        /*element.removeEventListener('mouseenter',stopmoving);
+        element.removeEventListener('mouseleave',startmoving);*/
+    }
+    setTimeout('moveAndSetOpacity()', timeout);
+    return; // disable moving object code:
     if(window.mobileAndTabletCheck == true){
         positionTZero();
         setTimeout('moveFloatObjs()', 5000);
@@ -127,7 +164,7 @@ function moveFloatObjs(){
         elmt.style.top = new_y+"px";
     }
     if(drawing){
-        setTimeout('moveFloatObjs()',10);
+        setTimeout('moveFloatObjs()',timeout);
     }
 }
 
