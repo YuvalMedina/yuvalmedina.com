@@ -29,13 +29,14 @@ body,html{
     height: 100%;
 }
 .textblock{
+    position: relative;
     background-color: seashell;
     opacity: 40%;
-    height: 200px;
-    padding-left: 200px;
-    padding-right: 200px;
+    height: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
-h3 {
+h3.mine {
     font-size: 23px;
     color: navy;
     font-weight: 325;
@@ -44,7 +45,7 @@ h3 {
     padding-bottom: 5px;
     letter-spacing: 6px;
 }
-h2 {
+h2.mine {
     font-size: 20px;
     color: navy;
     font-weight: 400;
@@ -53,7 +54,7 @@ h2 {
     padding-bottom: 8px;
     letter-spacing: 3px;
 }
-h4 {
+h4.mine {
     font-size: 25px;
     color: rgb(212, 193, 169);
     font-weight: 300;
@@ -61,14 +62,14 @@ h4 {
     margin: 0;
     letter-spacing: 1px;
 }
-h5{
+h5.mine {
     font-size: 25px;
-    color: rgb(163, 4, 70);
+    color: rgb(233, 204, 214);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     letter-spacing: 2px;
 }
-p {
+p.mine {
     font-size: 15px;
     color:rgba(83, 78, 78, 1);
     font-weight: 400;
@@ -172,5 +173,5 @@ nav .navmenu ul li a, nav .navmenu ul li a.visited{
 }
 span.float{
     position: absolute;
-    background-color: rgba(88, 122, 115, 0.7);
+    background-color: rgba(34, 38, 49, 0.96);
 }
