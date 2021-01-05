@@ -43,6 +43,7 @@ h4.mine {
     width: 100%;
     text-align: center;
     color: rgba(0, 0, 0, 0);
+    cursor: default;
 }
 .header span.border {
     background-color:rgba(83, 78, 78, 0.418);
@@ -51,6 +52,10 @@ h4.mine {
     font-size: 25px;
     letter-spacing: 8px;
     word-spacing: 10px;
+    transition: 0.5s;
+}
+.header span.border:hover{
+    background-color:rgba(83, 78, 78, 0.7);
 }
 .musicbox{
     position: absolute;
