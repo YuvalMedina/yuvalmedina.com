@@ -75,7 +75,7 @@ p.mine {
     font-weight: 400;
     text-align: center;
 }
-.header {
+.hello {
     position: absolute;
     left: 0%;
     top: 50%;
@@ -83,7 +83,7 @@ p.mine {
     text-align: center;
     color: rgba(0, 0, 0, 0);
 }
-.header span.border {
+.hello span.border {
     background-color:rgba(83, 78, 78, 0.418);
     color: #fff;
     padding: 10px;
@@ -95,6 +95,8 @@ p.mine {
     left: 0%;
     top: 40%;
     width: 100%;
+    padding-left: 9%;
+    padding-right: 9%;
     text-align: center;
 }
 .portraitcaption span.border {
@@ -103,58 +105,6 @@ p.mine {
     position: relative;
     font-size: 25px;
     letter-spacing: 8px;
-}
-nav{
-    z-index: 100;
-    position: fixed;
-    top: 5%;
-    left: 5%;
-    height: 70px;
-    width: 20%;
-}
-nav .navmenu{
-    position: relative;
-    display: inline-block;
-}
-nav .navmenu a img{
-    display: block;
-    opacity: 90%;
-    padding: 0 0px;
-    margin: 0;
-    background: none;
-    transition: .5s;
-    -webkit-transition: -webkit-transform .4s ease-in-out;
-}
-nav .navmenu:hover a img{
-    background: #38545e;
-    rotate: 90%;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-}
-nav .navmenu:hover ul li{
-    opacity: 90%;
-    transition: .5s;
-}
-nav .navmenu ul{
-    position: relative;
-    left: -24%;
-    width: 200%;
-    margin: 0;
-}
-nav .navmenu ul li{
-    width: 150px;
-    display: list-item;
-    position: relative;
-    border-bottom: 1px solid #042331;
-    list-style-type: none;
-    background-color: #38545e;
-    width: 30%;
-    border-top: none;
-    opacity: 0%;
-}
-nav .navmenu ul li a, nav .navmenu ul li a.visited{
-    text-decoration: none;
-    font-size: 20px;
 }
 .copyrightbox {
     position: relative;
@@ -165,6 +115,27 @@ nav .navmenu ul li a, nav .navmenu ul li a.visited{
     font-family: 'Times New Roman', Times, serif;
     background-color: rgba(0, 0, 0, 0);
     color:rgb(216, 91, 195);
+}
+.my-navbar{
+    width: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 15%, 65% 75%, 49% 100%, 35% 75%, 0% 15%);
+    transition: all ease 0.5s;
+}
+.my-nav-list{
+    opacity: 0;
+}
+.my-navbar.sticky{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 65% 75%, 49% 100%, 35% 75%, 0% 75%);
+}
+.my-nav-list.sticky{
+    opacity: 1;
+}
+ul{
+    display: flex;
+    width: 100%;
+}
+li{
+    width: 100%;
 }
 .copyrightbox span.copyright {
     position: relative;

@@ -28,7 +28,7 @@ var xMin=0;
 var xMax;
 var yMin;
 var yMax;
-var moveBy = 2;
+var moveBy = 1;
 var drawing = false;
 
 let floatObjs = [];
@@ -107,6 +107,11 @@ function positionTZero(){
 }
 
 function moveFloatObjs(){
+    if(window.mobileAndTabletCheck == true){
+        positionTZero();
+        setTimeout('moveFloatObjs()', 5000);
+        return;
+    }
     for(var i = 0; i < floatObjs.length; i++){
         var elmt = floatObjs[i].floatElmt;
         var x = parseInt(elmt.style.left);
@@ -175,3 +180,17 @@ function cumulativeOffset(element) {
         left: left
     };
 };
+
+var scrollValue = 0;
+
+$(window).scroll(function(){
+    var x = $(this).scrollTop();
+    if(x > scrollValue) {
+        $(".my-navbar").addClass("sticky");
+        $(".my-nav-list").addClass("sticky");
+    } else {
+        $(".my-navbar").removeClass("sticky");
+        $(".my-nav-list").removeClass("sticky");
+    }
+    scrollValue = x;
+});

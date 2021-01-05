@@ -6,22 +6,18 @@
     </head>
 </html>
 <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top my-navbar">
+        <ul class="nav navbar-nav my-nav-list">
+            <li><a href="code"><h4 class="mine">Code</h4></a></li>
+            <li><a href="music"><h4 class="mine">Music</h4></a></li>
+            <li><a href="blog"><h4 class="mine">Blog</h4></a></li>
+            <li><a href="photos"><h4 class="mine">Photos</h4></a></li>
+            <li><a href="contact"><h4 class="mine">Contact</h4></a></li>
+        </ul>
+    </nav>
+
     <div class="miamistatue">
-        <nav>
-            <span class="navmenu" id="menu">
-                <a href="#">
-                    <img src="https://i.imgur.com/X9hO5dN.png" width=91 height=65 id="navicon"></img>
-                </a>
-                <ul id="navlist">
-                    <li><a href="code"><h4 class="mine">Code</h4></a></li>
-                    <li><a href="music"><h4 class="mine">Music</h4></a></li>
-                    <li><a href="blog"><h4 class="mine">Blog</h4></a></li>
-                    <li><a href="photos"><h4 class="mine">Photos</h4></a></li>
-                    <li><a href="contact"><h4 class="mine">Where to find me</h4></a></li>
-                </ul>
-            </span>
-        </nav>
-        <div class="header">
+        <div class="hello">
             <span class="border">HELLO.</span>
         </div>
     </div>
@@ -37,12 +33,11 @@
     </div>
 
     <div class="yuvalportrait">
-        <div class="row" id="hoverelement">
-            <div class="col-lg-12 offset-md-5">
+        <div style="height: 30%;"></div>
+        <div class="row">
+            <div class="col-lg-12 offset-lg-5">
                 <div class="portraitcaption">
-                    <span class="border">I study computer science (B.S.) at Duke University,<br></span>
-                    <span class="border">and will complete my 2nd software engineering internship<br></span>
-                    <span class="border">at Google this coming summer (2021).<br></span>
+                    <span class="border">I study computer science (B.S.) at Duke University, and will complete my 2nd software engineering internship at Google this coming summer (2021).</span>
                 </div>
             </div>
         </div>
@@ -72,5 +67,7 @@
         </div>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="var/www/js/mobilecheck.js"></script>
     <script type="text/javascript" src="var/www/js/mainpage.js"></script>
 </body>
