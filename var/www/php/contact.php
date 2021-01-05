@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $emailsubj = "From: $lname, $fname; Subject: $subject";
         $header = "From: $from" . "\r\n" . "Reply-To: $email";
         
-        $retval = mail($to, $subject, $message, $header);
+        $retval = mail($to, $emailsubj, $message, $header);
 
         if($retval == true ) {
             echo "Message sent successfully..";
