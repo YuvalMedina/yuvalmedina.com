@@ -38,16 +38,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if($cansubmit){
-        $to = "contact@yuvalmedina.com";
+        $to = "ymedina10@gmail.com";
+        $from = "mainaccount@yuvalmedina.com";
         $emailsubj = "From: $lname, $fname; Subject: $subject";
-        $header = "reply-to:$email";
+        $header = "From: $from" . "\r\n" . "Reply-To: $email";
         
         $retval = mail($to, $subject, $message, $header);
 
         if($retval == true ) {
             echo "Message sent successfully..";
         } else {
-            echo "Error sending message..";
+            die("Error sending message..");
         }
     }
 }
