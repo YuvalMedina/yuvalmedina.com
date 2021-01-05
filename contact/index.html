@@ -2,43 +2,54 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../var/www/css/contact.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="../var/www/css/homebuttonobject.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="../var/www/css/navbar.css" media="screen">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     </head>
 </html>
 <body>
-    <div class="homebox">
-        <a href="https://yuvalmedina.com/"><h4><span class="homelink">HOME</span></h4></a>
-    </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top my-navbar">
+        <ul class="nav navbar-nav my-nav-list">
+            <li><a href="code"><h4 class="navtext">Code</h4></a></li>
+            <li><a href="music"><h4 class="navtext">Music</h4></a></li>
+            <li><a href="blog"><h4 class="navtext">Blog</h4></a></li>
+            <li><a href="photos"><h4 class="navtext">Photos</h4></a></li>
+            <li><a href="contact"><h4 class="navtext">Contact</h4></a></li>
+        </ul>
+    </nav>
+
     <div class="header">
         <span class="border">where to find me</span>
     </div>
     <span class="textbox">
-        <a href="https://www.linkedin.com/in/yuval-medina/" target="_blank"><h2>linkedin</h2></a>
-        <a href="https://github.com/YuvalMedina" target="_blank"><h2>github</h2></a>
-        <h2 style="margin-top: 100px; background-color: rgba(73, 95, 82, 0.5);">Contact me</h2>
+        <a href="https://www.linkedin.com/in/yuval-medina/" target="_blank"><h2 class="mine">linkedin</h2></a>
+        <a href="https://github.com/YuvalMedina" target="_blank"><h2 class="mine">github</h2></a>
+        
+        <h2 class="mine" style="margin-top: 100px; background-color: rgba(73, 95, 82, 0.5);">Contact me</h2>
         <div class="formcontainer">
             <form method="post" name="contactform" action="../var/www/php/contact.php">
-                <label for="fname"><h3>First Name</h3></label>
+                <label for="fname"><h3 class="mine">First Name</h3></label>
                 <input type="text" id="fname" name="fname" placeholder="First name.." required>
                 <span class="error">* <?php echo $fnameErr;?></span>
     
-                <label for="lname"><h3>Last Name</h3></label>
+                <label for="lname"><h3 class="mine">Last Name</h3></label>
                 <input type="text" id="lname" name="lname" placeholder="Last name..">
     
-                <label for="email"><h3>Email</h3></label>
+                <label for="email"><h3 class="mine">Email</h3></label>
                 <input type="text" id="email" name="email" placeholder="Your email.." required>
                 <span class="error">* <?php echo $emailErr;?></span>
     
-                <label for="subject"><h3>Subject</h3></label>
+                <label for="subject"><h3 class="mine">Subject</h3></label>
                 <input type="text" id="subject" name="subject" placeholder="Subject.." required>
                 <span class="error">* <?php echo $subjectErr;?></span>
     
-                <label for="message"><h3>Message</h3></label>
+                <label for="message"><h3 class="mine">Message</h3></label>
                 <textarea id="message" name="message" placeholder="Write something.."></textarea>
 
                 <input type="submit" style="margin-bottom: 50px;" value="Submit">
             </form>
         </div>
     </span>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../var/www/js/navbar.js"></script>
 </body>

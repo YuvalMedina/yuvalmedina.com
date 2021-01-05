@@ -26,6 +26,7 @@ function fillBlogs(blogData){
         var blogTitle = document.createElement("span");
         blogTitle.className = "blog-title";
         var blogTitleHeader = document.createElement("h3");
+        blogTitleHeader.className = "mine";
         blogTitleHeader.innerHTML = blogData[i];
         i++;
         blogTitle.appendChild(blogTitleHeader);
@@ -49,6 +50,7 @@ function fillBlogs(blogData){
         var blogPostObj = document.createElement("span");
         blogPostObj.className = "blog-post";
         var blogTextObj = document.createElement("p");
+        blogTextObj.className = "mine";
         blogTextObj.innerHTML = text;
         blogPostObj.appendChild(blogTextObj);
         

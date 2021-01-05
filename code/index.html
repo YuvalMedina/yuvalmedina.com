@@ -2,27 +2,34 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../var/www/css/codepage.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="../var/www/css/homebuttonobject.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="../var/www/css/navbar.css" media="screen">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     </head>
 </html>
 <body>
-    <div class="homebox">
-        <a href="https://yuvalmedina.com/"><h4><span class="homelink">HOME</span></h4></a>
-    </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top my-navbar">
+        <ul class="nav navbar-nav my-nav-list">
+            <li><a href="code"><h4 class="navtext">Code</h4></a></li>
+            <li><a href="music"><h4 class="navtext">Music</h4></a></li>
+            <li><a href="blog"><h4 class="navtext">Blog</h4></a></li>
+            <li><a href="photos"><h4 class="navtext">Photos</h4></a></li>
+            <li><a href="contact"><h4 class="navtext">Contact</h4></a></li>
+        </ul>
+    </nav>
+
     <div class="header">
         <span class="border">my code</span>
     </div>
     <div class="codebox">
         <div class="code" id="c1">
-            <span class="border"><h2>Power Tower Shader, inspired by <a href="https://youtu.be/elQVZLLiod4" target="_blank">3Blue1Brown</a></h2></span>
+            <span class="border"><h2 class="mine">Power Tower Shader, inspired by <a href="https://youtu.be/elQVZLLiod4" target="_blank">3Blue1Brown</a></h2></span>
             <script src="https://gist.github.com/YuvalMedina/947880787357fe8d372c0d17cf1b0dc7.js"></script>
         </div>
         <img class="example" src="https://i.imgur.com/N2PNrI6.png">
     </div>
     <div class="codebox">
         <div class="code" id="c2">
-            <span class="border"><h2>Sonification (turning data to sound) using SuperCollider.<br>Snippet from my own <a href="https://github.com/YuvalMedina/duke_dataplus/tree/master/Sonification" target="_blank">sonification project</a> at Duke Data+</h2></span>
+            <span class="border"><h2 class="mine">Sonification (turning data to sound) using SuperCollider.<br>Snippet from my own <a href="https://github.com/YuvalMedina/duke_dataplus/tree/master/Sonification" target="_blank">sonification project</a> at Duke Data+</h2></span>
             <script src="https://gist.github.com/YuvalMedina/bc2390ef439b016339d82036142c9758.js"></script>
         </div>
         <div class="videoexample">
@@ -31,7 +38,7 @@
     </div>
     <div class="codebox">
         <div style="width: 80%;">
-            <span class="border"><h2>Snippets from my<br><a href="https://github.com/YuvalMedina/spark-bigquery-connector/tree/writesupport-bigquerydatasource/connector/src/main" target="_blank">Software Engineering Internship (Summer 2020) at Google</a></h2></span>
+            <span class="border"><h2 class="mine">Snippets from my<br><a href="https://github.com/YuvalMedina/spark-bigquery-connector/tree/writesupport-bigquerydatasource/connector/src/main" target="_blank">Software Engineering Internship (Summer 2020) at Google</a></h2></span>
         </div>
         <div class="code" id="c3">
             <script src="https://gist.github.com/YuvalMedina/2fbcf44b456e573bf48b63354e2e9da7.js"></script>
@@ -43,9 +50,11 @@
 
     <div class="codebox">
         <div style="width: 80%;">
-            <span class="border"><h2><a href="https://github.com/YuvalMedina/yuvalmedina.com" target="_blank">Github repository</a> for yuvalmedina.com</h2></span>
+            <span class="border"><h2 class="mine"><a href="https://github.com/YuvalMedina/yuvalmedina.com" target="_blank">Github repository</a> for yuvalmedina.com</h2></span>
         </div>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../var/www/js/navbar.js"></script>
     <script type="text/javascript" src="../var/www/js/codepage.js"></script>
 </body>

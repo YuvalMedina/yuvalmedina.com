@@ -10,7 +10,7 @@ body{
     background-image: url("https://i.imgur.com/btBhQSl.jpg");
     background-size: 100% 100%;
 }
-h3 {
+h3.mine {
     font-size: 25px;
     color: navy;
     font-weight: 325;
@@ -21,17 +21,18 @@ h3 {
     letter-spacing: 6px;
     display: inline-block;
 }
-h2 {
+h2.mine {
     font-size: 17px;
     color: navy;
     font-weight: 400;
     margin: 2px;
+    margin-bottom: 8px;
     text-align: center;
     letter-spacing: 1px;
     background-color: lavenderblush;
     background-blend-mode: lighten;
 }
-h4 {
+h4.mine {
     font-size: 25px;
     color: rgb(51, 49, 46);
     font-weight: 300;
@@ -39,7 +40,7 @@ h4 {
     margin: 0;
     letter-spacing: 2px;
 }
-p{
+p.mine{
     font-size: 16px;
     color: rgb(49, 37, 47);
     font-weight: 300;

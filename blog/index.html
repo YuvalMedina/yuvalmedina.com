@@ -2,16 +2,27 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../var/www/css/blogpage.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="../var/www/css/homebuttonobject.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="../var/www/css/navbar.css" media="screen">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     </head>
 </html>
 <body>
-    <div class="homebox">
-        <a href="https://yuvalmedina.com/"><h4><span class="homelink">HOME</span></h4></a>
-    </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top my-navbar">
+        <ul class="nav navbar-nav my-nav-list">
+            <li><a href="../code"><h4 class="navtext">Code</h4></a></li>
+            <li><a href="../music"><h4 class="navtext">Music</h4></a></li>
+            <li><a href="../blog"><h4 class="navtext">Blog</h4></a></li>
+            <li><a href="../"><h4 class="navtext" style="font-size: 30px;">Home</h4></a></li>
+            <li><a href="../photos"><h4 class="navtext">Photos</h4></a></li>
+            <li><a href="../contact"><h4 class="navtext">Contact</h4></a></li>
+        </ul>
+    </nav>
+
     <div class="header">
         <span class="border">blog</span>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../var/www/js/navbar.js"></script>
     <script type="text/javascript" src="../var/www/js/blogpage.js"></script>
 </body>
