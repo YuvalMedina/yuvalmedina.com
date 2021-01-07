@@ -1,4 +1,5 @@
 var floatElmts;
+let timeouts = [];
 
 class delta{
     constructor(x,y){
@@ -56,7 +57,10 @@ window.addEventListener('load', function(){
 
 function stopdrawing(timeout){
     drawing = false;
-    setTimeout('startmoving()', timeout);
+    while(timeouts.length > 0){
+        clearTimeout(timeouts.pop());
+    }
+    timeouts.push(setTimeout('startmoving()', timeout));
 }
 
 function stopmoving(){
@@ -65,7 +69,7 @@ function stopmoving(){
 
 function startmoving(){
     drawing = true;
-    setTimeout('moveFloatObjs()',5000);
+    timeouts.push(setTimeout('moveFloatObjs()',5000));
 }
 
 function startup(){
@@ -114,7 +118,9 @@ function moveAndSetOpacity(){
         element.style.opacity = 1;
     }
     //setTimeout('addMouseListenersAndMove()',timeout);
-    if(drawing){setTimeout('moveFloatObjs()', 7000);}
+    if(drawing){
+        timeouts.push(setTimeout('moveFloatObjs()', 7000));
+    }
 }
 
 /*function addMouseListenersAndMove(){
@@ -142,7 +148,7 @@ function moveFloatObjs(){
         /*element.removeEventListener('mouseenter',stopmoving);
         element.removeEventListener('mouseleave',startmoving);*/
     }
-    setTimeout('moveAndSetOpacity()', timeout);
+    timeouts.push(setTimeout('moveAndSetOpacity()', timeout));
     return; // disable moving object code:
     if(window.mobileAndTabletCheck == true){
         positionTZero();

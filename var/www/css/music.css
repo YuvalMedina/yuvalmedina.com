@@ -58,9 +58,8 @@ h4.mine {
     background-color:rgba(83, 78, 78, 0.7);
 }
 .musicbox{
-    position: absolute;
-    top: 40%;
-    left: 10%;
+    position: relative;
+    left: 5%;
     width: 90%;
     font-size: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -117,4 +116,25 @@ button.title{
     max-height: 400px;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+}
+a.pagelinks h4.page {
+    color: #fff;
+    margin-top: inherit;
+    font-size: 16px;
+    letter-spacing: 8px;
+    word-spacing: 10px;
+}
+a.pagelinks h4.page span{
+    background-color:rgba(54, 85, 73, 0.418);
+    transition: 0.5s;
+}
+a.pagelinks h4.page span:hover{
+    background-color:rgba(85, 54, 73, 0.418);
+}
+a.pagelinks{
+    display: inline-block;
+    margin-top: 5%;
+}
+a.pagelinks:hover, a.pagelinks.active {
+    text-decoration: none;
 }
