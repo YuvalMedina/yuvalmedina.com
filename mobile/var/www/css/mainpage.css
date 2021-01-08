@@ -22,7 +22,7 @@ body,html{
     background-color: rgb(238, 238, 255);
 }
 h3.mine {
-    font-size: 23px;
+    font-size: 33px;
     color: navy;
     font-weight: 325;
     text-align: center;
@@ -31,7 +31,7 @@ h3.mine {
     letter-spacing: 6px;
 }
 h2.mine {
-    font-size: 20px;
+    font-size: 30px;
     color: navy;
     font-weight: 400;
     text-align: center;
@@ -48,7 +48,7 @@ h4.mine {
     letter-spacing: 1px;
 }
 h5.mine {
-    font-size: 25px;
+    font-size: 35px;
     color: rgb(233, 204, 214);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
@@ -73,7 +73,7 @@ p.mine {
     background-color:rgba(83, 78, 78, 0.418);
     color: #fff;
     padding: 10px;
-    font-size: 25px;
+    font-size: 35px;
     letter-spacing: 8px;
     transition: 0.5s;
 }
@@ -93,7 +93,7 @@ p.mine {
     background-color:rgba(83, 78, 78, 0.418);
     color: rgb(245, 225, 225);
     position: relative;
-    font-size: 25px;
+    font-size: 35px;
     letter-spacing: 8px;
     cursor: default;
     transition: 0.5s;
@@ -134,7 +134,7 @@ li{
 }
 .copyrightbox span.copyright {
     position: relative;
-    font-size: 13px;
+    font-size: 23px;
     letter-spacing: 1px;
 }
 span.float{

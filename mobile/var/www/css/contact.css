@@ -10,7 +10,7 @@ body{
     background-size: 100% auto;
 }
 h3.mine {
-    font-size: 15px;
+    font-size: 23px;
     color: rgb(21, 21, 26);
     font-weight: 325;
     text-align: left;
@@ -18,7 +18,7 @@ h3.mine {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h2.mine {
-    font-size: 17px;
+    font-size: 25px;
     color: navy;
     font-weight: 400;
     margin: 2px;
@@ -50,6 +50,7 @@ p.mine{
 }
 .header {
     position: absolute;
+    display: inline-block;
     left: 0%;
     top: 15%;
     width: 100%;
@@ -61,7 +62,7 @@ span.border {
     background-color:rgba(83, 78, 78, 0.418);
     color: #fff;
     padding: 10px;
-    font-size: 25px;
+    font-size: 35px;
     letter-spacing: 8px;
     word-spacing: 10px;
     transition: 0.5s;
@@ -71,7 +72,7 @@ span.border:hover, span.border:active, span.border:focus{
     background-color:rgba(83, 78, 78, 0.7);
 }
 span.textbox{
-    top: 40%;
+    top: 30%;
     display: inline-block;
     left: 30%;
     width: 40%;

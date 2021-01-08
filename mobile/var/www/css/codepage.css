@@ -19,7 +19,7 @@ h3.mine {
     letter-spacing: 6px;
 }
 h2.mine {
-    font-size: 17px;
+    font-size: 25px;
     color: navy;
     font-weight: 400;
     margin: 2px;
@@ -54,7 +54,7 @@ h4.mine {
     background-color:rgba(83, 78, 78, 0.418);
     color: #fff;
     padding: 10px;
-    font-size: 25px;
+    font-size: 35px;
     letter-spacing: 8px;
     word-spacing: 10px;
     transition: 0.5s;

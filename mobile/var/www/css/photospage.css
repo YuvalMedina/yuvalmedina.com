@@ -29,7 +29,7 @@ h2.mine {
 h2.mine.caption{
     background-color: rgba(128, 94, 0, 0.356);
     color:rgb(70, 57, 57);
-    font-size: 19px;
+    font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     cursor: default;
     transition: 0.5s;
@@ -58,7 +58,7 @@ h4.mine {
     background-color:rgba(83, 78, 78, 0.418);
     color: #fff;
     padding: 10px;
-    font-size: 25px;
+    font-size: 35px;
     letter-spacing: 8px;
     word-spacing: 10px;
     transition: 0.5s;
