@@ -5,9 +5,9 @@ body,html{
 }
 body{
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-image: url("https://i.imgur.com/5qbPkL8.jpg");
-    background-size: 100% auto;
+    background-size: fill;
 }
 h3.mine {
     font-size: 25px;
@@ -66,16 +66,17 @@ h4.mine {
     position: relative;
     vertical-align: top;
     display: inline-block;
-    left: 10%;
     top: 40%;
+    left: 5%;
     width: 90%;
-    padding-bottom: 7%;
+    margin-bottom: 7%;
 }
 .code{
     position: relative;
     width: 40%;
     height: 250px;
     font-size: 18px;
+    margin-bottom: 7%;
     display: inline-block;
     vertical-align: top;
     cursor: default;
@@ -96,16 +97,12 @@ canvas.animation{
     vertical-align: top;
 }
 img.example {
-    height: 500px;
-    width: 45%;
+    max-width: 100%;
     display: inline-block;
     vertical-align: top;
 }
 .videoexample{
     position: relative;
-    margin: 0;
-    width: 45%;
-    height: 400px;
     display: inline-block;
     vertical-align: top;
 }

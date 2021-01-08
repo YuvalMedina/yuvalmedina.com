@@ -65,6 +65,7 @@ span.border {
     letter-spacing: 8px;
     word-spacing: 10px;
     transition: 0.5s;
+    font-feature-settings: "liga" 0;
 }
 span.border:hover, span.border:active, span.border:focus{
     background-color:rgba(83, 78, 78, 0.7);

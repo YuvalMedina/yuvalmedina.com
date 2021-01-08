@@ -68,23 +68,21 @@ h4.mine {
 }
 .imagesbody{
     position: relative;
-    top: 40%;
-    width: 45%;
-    left: 5%;
+    margin-top: 20%;
     display: inline-block;
     vertical-align: top;
 }
-.imagesbody .imagebox{
+.imagebox{
     position: relative;
     display: inline-block;
     vertical-align: top;
     padding-bottom: 40px;
-    width: 100%;
 }
-.imagesbody .imagebox img.myimage{
+.imagebox img.myimage{
     position: relative;
+    overflow: hidden;
     display: inline-block;
     padding-bottom: 10px;
-    width: 100%;
+    max-width: 100%;
     vertical-align: top;
 }

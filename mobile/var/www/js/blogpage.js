@@ -19,9 +19,13 @@ function fillBlogs(blogData){
     var numBlogs = parseInt(blogData[0]);
     var i = 1;
     var counter = 0;
+
+    var blogRow = document.createElement("div");
+    blogRow.className = "row allblogs";
+
     while(counter < numBlogs){
-        var blogContainer = document.createElement("span");
-        blogContainer.className = "blogcontainer";
+        var blogContainer = document.createElement("div");
+        blogContainer.className = "col-lg-12 blogcontainer";
 
         var blogTitle = document.createElement("span");
         blogTitle.className = "blog-title";
@@ -56,17 +60,11 @@ function fillBlogs(blogData){
         
         blogContainer.appendChild(blogTitle);
         blogContainer.appendChild(blogPostObj);
-        document.body.appendChild(blogContainer);
+        blogRow.appendChild(blogContainer);
         counter++;
     }
 
-    fillEmpty();
+    document.body.appendChild(blogRow);
 
     console.log('blogs filled:' + counter);
-}
-
-function fillEmpty(){
-    var emptyDiv = document.createElement("div");
-    emptyDiv.className = "empty";
-    document.body.appendChild(emptyDiv);
 }

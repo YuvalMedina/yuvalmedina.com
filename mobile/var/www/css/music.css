@@ -19,7 +19,7 @@ h3.mine {
     letter-spacing: 6px;
 }
 h2.mine {
-    font-size: 17px;
+    font-size: 25px;
     color: navy;
     font-weight: 400;
     margin: 2px;
@@ -48,7 +48,7 @@ h4.mine {
     background-color:rgba(83, 78, 78, 0.418);
     color: #fff;
     padding: 10px;
-    font-size: 25px;
+    font-size: 35px;
     letter-spacing: 8px;
     word-spacing: 10px;
     transition: 0.5s;
@@ -59,6 +59,7 @@ h4.mine {
 .musicbox{
     position: relative;
     left: 5%;
+    margin-top: 5px;
     width: 90%;
     font-size: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -67,10 +68,9 @@ h4.mine {
 button.title{
     position: relative;
     display: inline-block;
-    width: 45%;
+    width: 100%;
     padding: 8px;
     border: none;
-    font-size: 18px;
     background-color: rosybrown;
     transition: .5s;
     vertical-align: top;
@@ -80,7 +80,7 @@ button.title{
 }
 .video{
     position: relative;
-    width: 45%;
+    width: 100%;
     padding-block-end: 30px;
     display: inline-block;
     vertical-align: top;
@@ -99,7 +99,7 @@ button.title{
 }
 .videofirst{
     position: relative;
-    width: 45%;
+    width: 100%;
     padding-block-end: 30px;
     display: inline-block;
     vertical-align: top;
@@ -119,7 +119,7 @@ button.title{
 a.pagelinks h4.page {
     color: #fff;
     margin-top: inherit;
-    font-size: 16px;
+    font-size: 25px;
     letter-spacing: 8px;
     word-spacing: 10px;
 }
