@@ -1,5 +1,5 @@
 h4.navtext {
-    font-size: 27px;
+    font-size: 45px;
     color: rgb(212, 193, 169);
     font-weight: 300;
     text-align: center;
@@ -7,7 +7,7 @@ h4.navtext {
     letter-spacing: 1px;
 }
 .navbar{
-    height: 20%;
+    height: 5%;
 }
 .my-navbar{
     width: 100%;
