@@ -101,6 +101,15 @@ button.submitform{
     position: relative;
     margin-bottom: 50px;
 }
-span.textbox a:hover, span.textbox a.active{
+span.textbox a:hover, span.textbox a:active, span.textbox a:visited{
     text-decoration: none;
+}
+#contactme{
+    margin-top: 100px;
+    background-color: rgba(73, 95, 82, 0.5);
+    cursor: default;
+    transition: 0.5s;
+}
+#contactme:hover, #contactme:active, #contactme:focus{
+    background-color: rgba(88, 73, 95, 0.5);
 }
