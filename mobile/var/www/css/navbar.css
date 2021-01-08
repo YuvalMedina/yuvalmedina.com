@@ -1,14 +1,17 @@
 h4.navtext {
-    font-size: 25px;
+    font-size: 27px;
     color: rgb(212, 193, 169);
     font-weight: 300;
     text-align: center;
     margin: 0;
     letter-spacing: 1px;
 }
+.navbar{
+    height: 20%;
+}
 .my-navbar{
     width: 100%;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 15%, 65% 75%, 49% 100%, 35% 75%, 0% 15%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 25%, 65% 75%, 49% 100%, 35% 75%, 0% 25%);
     transition: all ease 0.5s;
 }
 .my-nav-list{
@@ -34,7 +37,7 @@ li{
     overflow: hidden;
     transition: 0.3s;
 }
-.my-nav-list li div.border:hover{
+.my-nav-list li div.border:hover, .my-nav-list li div.border:active, .my-nav-list li div.border:focus{
     background-color: rgba(99, 69, 87, 0.8);
 }
 .my-nav-list li div.border a, .my-nav-list li div.border a:hover, .my-nav-list li div.border a.active{

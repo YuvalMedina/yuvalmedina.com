@@ -4,11 +4,10 @@ body,html{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body{
-    background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-image: url("https://i.imgur.com/pqZ8GvP.jpg");
-    background-size: 100% 100%;
+    background-size: 100% auto;
 }
 h3.mine {
     font-size: 15px;
@@ -30,7 +29,7 @@ h2.mine {
     background-blend-mode: lighten;
     transition: 0.5s;
 }
-h2.mine:hover {
+h2.mine:hover, h2.mine:active, h2.mine:focus {
     background-color: rgba(204, 72, 116, 0.3);
 }
 h4.mine {
@@ -67,7 +66,7 @@ span.border {
     word-spacing: 10px;
     transition: 0.5s;
 }
-span.border:hover{
+span.border:hover, span.border:active, span.border:focus{
     background-color:rgba(83, 78, 78, 0.7);
 }
 span.textbox{
@@ -103,4 +102,13 @@ button.submitform{
 }
 span.textbox a:hover, span.textbox a.active{
     text-decoration: none;
+}
+#contactme{
+    margin-top: 100px;
+    background-color: rgba(73, 95, 82, 0.5);
+    cursor: default;
+    transition: 0.5s;
+}
+#contactme:hover, #contactme:active, #contactme:focus{
+    background-color: rgba(88, 73, 95, 0.5);
 }

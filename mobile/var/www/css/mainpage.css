@@ -74,7 +74,7 @@ p.mine {
     letter-spacing: 8px;
     transition: 0.5s;
 }
-.hello span.border:hover{
+.hello span.border:hover, .hello span.border:active, .hello span.border:focus{
     background-color:rgba(83, 78, 78, 0.7);
 }
 .portraitcaption {
@@ -137,7 +137,7 @@ span.float{
     background-color: rgba(34, 38, 49, 0.96);
     transition: 0.3s;
 }
-span.float:hover{
+span.float:hover, span.float:active, span.float:focus{
     background-color: rgba(29, 42, 78, 0.96)
 }
 span.float a, span.float a:hover, span.float a.active{
@@ -149,7 +149,7 @@ span.float a, span.float a:hover, span.float a.active{
     width: 35%;
     transition: 0.3s;
 }
-.textblock div.border:hover{
+.textblock div.border:hover, .textblock div.border:active, .textblock div.border:focus{
     background-color:rgba(83, 78, 78, 0.8);
 }
 .textblock div.border a, .textblock div.border a:hover, .textblock div.border a.active{
