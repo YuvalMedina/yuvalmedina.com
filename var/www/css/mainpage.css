@@ -113,6 +113,10 @@ p.mine {
     font-size: 25px;
     letter-spacing: 8px;
     cursor: default;
+    transition: 0.5s;
+}
+.portraitcaption span.border:hover {
+    background-color:rgba(83, 78, 78, 0.822);
 }
 .copyrightbox {
     position: relative;
