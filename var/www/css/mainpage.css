@@ -168,15 +168,15 @@ span.float:hover{
 span.float a, span.float a:hover, span.float a.active{
     text-decoration: none;
 }
-.textblock div.border{
+span.links{
     background-color:rgba(83, 78, 78, 0);
     margin: auto;
-    width: 35%;
+    padding: 4px;
     transition: 0.3s;
 }
-.textblock div.border:hover{
-    background-color:rgba(83, 78, 78, 0.8);
+span.links:hover{
+    background-color:rgba(83, 78, 78, 0.7);
 }
-.textblock div.border a, .textblock div.border a:hover, .textblock div.border a.active{
+a.links, a.links:hover, a.links.active{
     text-decoration: none;
 }
