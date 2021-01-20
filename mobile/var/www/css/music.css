@@ -134,6 +134,6 @@ a.pagelinks{
     display: inline-block;
     margin-top: 5%;
 }
-a.pagelinks, a.pagelinks:hover, a.pagelinks.active {
+a.pagelinks, a.pagelinks:hover, a.pagelinks:active, a.pagelinks:visited {
     text-decoration: none;
 }

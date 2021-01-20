@@ -130,6 +130,6 @@ a.mediumlink h4.medium span:hover{
 a.mediumlink{
     margin-top: 4%;
 }
-a.mediumlink, a.mediumlink:hover, a.mediumlink.active {
+a.mediumlink, a.mediumlink:hover, a.mediumlink:active, a.mediumlink:visited {
     text-decoration: none;
 }

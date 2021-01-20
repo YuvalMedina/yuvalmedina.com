@@ -37,6 +37,6 @@ li{
 .my-nav-list li div.border:hover{
     background-color: rgba(99, 69, 87, 0.8);
 }
-.my-nav-list li div.border a, .my-nav-list li div.border a:hover, .my-nav-list li div.border a.active{
+.my-nav-list li div.border a, .my-nav-list li div.border a:hover, .my-nav-list li div.border a:active, .my-nav-list li div.border a:visited{
     text-decoration: none;
 }

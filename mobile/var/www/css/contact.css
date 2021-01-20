@@ -102,7 +102,7 @@ button.submitform{
     position: relative;
     margin-bottom: 50px;
 }
-span.textbox a, span.textbox a:hover, span.textbox a.active{
+span.textbox a, span.textbox a:hover, span.textbox a:active, span.textbox a:visited{
     text-decoration: none;
 }
 #contactme{
