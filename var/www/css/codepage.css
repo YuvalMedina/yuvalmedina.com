@@ -115,3 +115,24 @@ img.example {
     display: inline-block;
     vertical-align: top;
 }
+a.pagelinks h4.page {
+    color: #fff;
+    margin-top: inherit;
+    font-size: 18px;
+    letter-spacing: 8px;
+    word-spacing: 10px;
+}
+a.pagelinks h4.page span{
+    background-color:rgba(54, 85, 73, 0.418);
+    transition: 0.5s;
+}
+a.pagelinks h4.page span:hover{
+    background-color:rgba(85, 54, 73, 0.418);
+}
+a.pagelinks{
+    display: inline-block;
+    margin-top: 5%;
+}
+a.pagelinks, a.pagelinks:hover, a.pagelinks:active, a.pagelinks:visited {
+    text-decoration: none;
+}
