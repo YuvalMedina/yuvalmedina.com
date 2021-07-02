@@ -89,16 +89,21 @@ p.mine {
     color: rgba(0, 0, 0, 0);
     cursor: default;
 }
-.hello span.border {
+.hello a span.border {
     background-color:rgba(83, 78, 78, 0.418);
     color: #fff;
     padding: 10px;
     font-size: 25px;
     letter-spacing: 8px;
     transition: 0.5s;
+    text-decoration: none;
 }
-.hello span.border:hover{
+.hello a span.border:hover{
     background-color:rgba(83, 78, 78, 0.7);
+    text-decoration: none;
+}
+.hello a:active, .hello a:hover{
+    text-decoration: none;
 }
 .portraitcaption {
     position: relative;
