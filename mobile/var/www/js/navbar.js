@@ -7,10 +7,10 @@ var hasVerticalScroll = document.body.scrollHeight > document.body.clientHeight;
 var cStyle = document.body.currentStyle||window.getComputedStyle(document.body, "");
 
 // Check the overflow and overflowY properties for "auto" and "visible" values
-hasVerticalScroll = cStyle.overflow == "visible" 
+hasVerticalScroll = false /*cStyle.overflow == "visible" 
              || cStyle.overflowY == "visible"
              || (hasVScroll && cStyle.overflow == "auto")
-             || (hasVScroll && cStyle.overflowY == "auto");
+             || (hasVScroll && cStyle.overflowY == "auto")*/;
 
 $(document).ready(function() {
     if (hasVerticalScroll) {

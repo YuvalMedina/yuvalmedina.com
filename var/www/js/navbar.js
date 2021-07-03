@@ -31,4 +31,13 @@ $(document).ready(function() {
         $(".my-navbar").addClass("sticky");
         $(".my-nav-list").addClass("sticky");
     }
+    var navbar = document.getElementsByClassName("navbar");
+    $(navbar).mouseenter(function(event){
+        $(".my-navbar").addClass("sticky");
+        $(".my-nav-list").addClass("sticky");
+    });
+    $(navbar).mouseleave(function(event){
+        $(".my-navbar").removeClass("sticky");
+        $(".my-nav-list").removeClass("sticky");
+    });
 });
