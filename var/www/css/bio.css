@@ -3,10 +3,50 @@ body,html{
     margin: 0;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-body{
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("https://i.imgur.com/btBhQSl.jpg");
-    background-size: 100% auto;
+.cover{
+    background: rgb(109, 173, 93);
+    background: linear-gradient(90deg, rgb(4, 65, 4) 0%, rgb(88, 12, 54) 100%);
+    background: -moz-linear-gradient(90deg, hsla(244, 89%, 7%, 1) 0%, rgb(77, 73, 94) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(244, 89%, 7%, 1) 0%, rgb(52, 83, 81) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#040221", endColorstr="#28B8D5", GradientType=1 );
+    background-size: cover;
+}
+.yuvalportrait{
+    height: 100%;
+    width: 40%;
+    padding-left: 5%;
+    margin-right: 0%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    float: left;
+}
+.biocolumn span.biocontainer p.bio{
+    font-size: 16px;
+    color: rgb(22, 21, 18);
+    font-weight: 400;
+    text-align: left;
+    padding-left: 10px;
+    word-spacing: 2px;
+    opacity: 1;
+}
+.biocolumn span.biocontainer p.bio a{
+    text-decoration: none;
+}
+.biocolumn{
+    width: 40%;
+    float: right;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+.biocolumn span.biocontainer{
+    background-color: rgb(52, 100, 84);
+    padding: 10px;
+    display: inline-block;
+    margin-right: 10%;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+.biocolumn span.biocontainer:hover{
+    opacity: 1;
+    transition: 0.5s;
 }
