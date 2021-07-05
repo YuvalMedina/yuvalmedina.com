@@ -71,12 +71,15 @@ button.title{
     width: 100%;
     padding: 8px;
     border: none;
-    background-color: rosybrown;
+    background-color: rgb(181, 188, 143);
+    border-radius: 5px;
+    border-style: none;
     transition: .5s;
     vertical-align: top;
 }
 .active, button.title:hover, button.title:active, button.title:focus {
     background-color: rgb(160, 130, 105);
+    border-style: solid;
 }
 .video{
     position: relative;
