@@ -223,3 +223,8 @@ function cumulativeOffset(element) {
         left: left
     };
 };
+
+var contentObjs = document.getElementsByClassName("content");
+for(var i = 0; i < contentObjs.length; i++){
+    appear(contentObjs[i], 0, 5, 100);
+}

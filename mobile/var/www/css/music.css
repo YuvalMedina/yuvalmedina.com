@@ -122,7 +122,7 @@ button.title{
 a.pagelinks h4.page {
     color: #fff;
     margin-top: inherit;
-    font-size: 29px;
+    font-size: 40px;
     letter-spacing: 8px;
     word-spacing: 10px;
 }
@@ -139,4 +139,7 @@ a.pagelinks{
 }
 a.pagelinks, a.pagelinks:hover, a.pagelinks:active, a.pagelinks:visited {
     text-decoration: none;
+}
+.musicbackground{
+    opacity: 0;
 }

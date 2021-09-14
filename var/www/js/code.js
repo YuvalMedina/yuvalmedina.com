@@ -64,3 +64,7 @@ function startup(element, data){
 
     gl.useProgram(shaderProgram); 
 }
+
+var codecontent = document.getElementsByClassName("content")[0];
+appear(codecontent, 0, 5, 100);
+appear(document.getElementsByClassName("header")[0], 0, 5, 100);

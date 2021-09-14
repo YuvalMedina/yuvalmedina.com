@@ -18,7 +18,7 @@ function fillBio(bioData){
     bioRow.className = "row cover";
 
     var bioContainer = document.createElement("div");
-    bioContainer.className = "col-lg-6 biocolumn";
+    bioContainer.className = "col-lg-11 biocolumn";
 
     var bioSpan = document.createElement("span");
     bioSpan.className = "biocontainer";
@@ -29,16 +29,10 @@ function fillBio(bioData){
 
     bioSpan.appendChild(bioText);
     bioContainer.appendChild(bioSpan);
-
-    var imgContainer = document.createElement("div");
-    imgContainer.className = "col-lg-5";
-    img = document.createElement("img");
-    img.className = "yuvalportrait";
-    img.setAttribute("src", "https://i.imgur.com/x9em7h8.png");
-    imgContainer.appendChild(img);
-    
-    bioRow.appendChild(imgContainer);
     bioRow.appendChild(bioContainer);
 
     document.body.appendChild(bioRow);
+
+    appear(bioContainer, 0, 5, 100);
+    appear(document.getElementsByClassName("header")[0], 0, 5, 100);
 }

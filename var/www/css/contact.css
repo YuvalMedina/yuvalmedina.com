@@ -57,6 +57,7 @@ p.mine{
     text-align: center;
     color: rgba(0, 0, 0, 0);
     cursor: default;
+    opacity: 0;
 }
 span.border {
     background-color:rgba(83, 78, 78, 0.418);
@@ -77,6 +78,7 @@ span.textbox{
     width: 40%;
     position: relative;
     align-content: center;
+    opacity: 0;
 }
 .formcontainer{
     top: 60%;

@@ -1,4 +1,4 @@
-var backgroundUrls = ["https://i.imgur.com/lDdObsM.jpg","https://i.imgur.com/J8pFim1.jpg","https://i.imgur.com/vhFMJHZ.jpg","https://i.imgur.com/kdUHHPL.jpg"];
+var backgroundUrls = ["https://i.imgur.com/lbDiuiY.jpg","https://i.imgur.com/J8pFim1.jpg","https://i.imgur.com/vhFMJHZ.jpg","https://i.imgur.com/kdUHHPL.jpg"];
 var backgroundContainers;
 
 backgroundContainers = document.getElementsByClassName("backgroundcontainer");
@@ -8,6 +8,7 @@ function fillBackgrounds(){
     for(var i = 0; i < backgroundContainers.length; i++){
         backgroundContainers[i].style.backgroundImage = "url('"+backgroundUrls[i]+"')";
         setWidthHeight(backgroundContainers[i],backgroundUrls[i]);
+        appear(backgroundContainers[i], 0, 5, 100)
     }
 }
 

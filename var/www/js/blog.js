@@ -25,7 +25,7 @@ function fillBlogs(blogData){
 
     while(counter < numBlogs){
         var blogContainer = document.createElement("div");
-        blogContainer.className = "col-lg-12 blogcontainer";
+        blogContainer.className = "col-lg-11 blogcontainer";
 
         var blogTitle = document.createElement("span");
         blogTitle.className = "blog-title";
@@ -65,6 +65,9 @@ function fillBlogs(blogData){
     }
 
     document.body.appendChild(blogRow);
+
+    appear(blogRow, 0, 5, 100);
+    appear(document.getElementsByClassName("header")[0], 0, 5, 100);
 
     console.log('blogs filled:' + counter);
 }

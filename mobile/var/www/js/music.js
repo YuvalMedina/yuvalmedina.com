@@ -34,3 +34,6 @@ for (i = 0; i < buttons.length; i++) {
         }
     });
 };
+
+var musicbackground = document.getElementsByClassName("musicbackground")[0];
+appear(musicbackground, 0, 5, 100);
