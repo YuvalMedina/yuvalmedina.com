@@ -45,6 +45,17 @@ body,html{
 }
 .biocolumn span.biocontainer p.bio a{
     text-decoration: none;
+    color: rgb(8, 168, 147);
+    opacity: 0.9;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+.biocolumn span.biocontainer p.bio a:hover{
+    text-decoration: none;
+    color: rgb(3, 3, 44);
+    opacity: 1.0;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
 }
 .biocolumn{
     z-index: 50;
