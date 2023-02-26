@@ -35,8 +35,8 @@ body,html{
     background-color:rgba(83, 78, 78, 0.7);
 }
 .biocolumn span.biocontainer p.bio{
-    font-size: 40px;
-    color: rgb(172, 166, 147);
+    font-size: 20px;
+    color: rgb(248, 235, 193);
     font-weight: 500;
     text-align: left;
     padding-left: 10px;
@@ -66,13 +66,13 @@ body,html{
     top: 0px;
     width: 90%;
     margin-left: 5%;
-    margin-right: 0%;
+    margin-right: 5%;
     padding-top: 7%;
     padding-bottom: 7%;
     float: left;
-    background-image: url("https://i.imgur.com/lbDiuiY.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-image: url("https://imgur.com/VIfwwZe.jpg");
+    background-repeat: space;
+    background-size: 40%;
     opacity: 0;
 }
 .biocolumn span.biocontainer{
@@ -83,9 +83,5 @@ body,html{
     margin-left: 10%;
     margin-top: 30%;
     transition: 0.5s;
-    opacity: 0.6;
-}
-.biocolumn span.biocontainer:hover{
     opacity: 0.9;
-    transition: 0.5s;
 }

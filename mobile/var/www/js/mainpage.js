@@ -1,4 +1,4 @@
-var backgroundUrls = ["https://i.imgur.com/lbDiuiY.jpg","https://i.imgur.com/J8pFim1.jpg","https://i.imgur.com/vhFMJHZ.jpg","https://i.imgur.com/kdUHHPL.jpg"];
+var backgroundUrls = ["https://imgur.com/qtfdTfd.jpg","https://imgur.com/8vcLVwl.jpg","https://i.imgur.com/vhFMJHZ.jpg","https://i.imgur.com/kdUHHPL.jpg"];
 var backgroundContainers;
 
 backgroundContainers = document.getElementsByClassName("backgroundcontainer");

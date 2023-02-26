@@ -13,16 +13,21 @@ body{
     background-size: cover;
 }
 .miamistatue {
-    background-image: url("https://i.imgur.com/lbDiuiY.jpg");
+    background-image: url("https://imgur.com/qtfdTfd.jpg");
     height: 100%;
     max-width: 100%;
-    background-position: 0% 10%;
+    background-size: 75%;
+    background-position-y: 25%;
+    background-position-x: 50%;
 }
 .yuvalportrait {
     position: relative;
-    background-image: url("https://i.imgur.com/J8pFim1.jpg");
-    background-position-y: 20%;
+    background-image: url("https://imgur.com/8vcLVwl.jpg");
     height: 100%;
+    max-width: 100%;
+    background-size: 75%;
+    background-position-y: 25%;
+    background-position-x: 50%;
 }
 .floweryhome {
     background-image: url("https://i.imgur.com/vhFMJHZ.jpg");
