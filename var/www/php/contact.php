@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if($cansubmit){
         $to = "ymedina10@gmail.com";
-        $from = "mainaccount@yuvalmedina.com";
+        $from = "contact@yuvalmedina.com";
         $emailsubj = "From: $lname, $fname; Subject: $subject";
         $header = "From: $from" . "\r\n" . "Reply-To: $email";
         
