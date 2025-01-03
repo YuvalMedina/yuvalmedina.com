@@ -14,7 +14,7 @@
     </url>
     <url>
         <loc>https://yuvalmedina.com/music</loc>
-        <lastmod>2024-07-10</lastmod>
+        <lastmod>2025-01-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
     </url>
@@ -34,6 +34,6 @@
         <loc>https://yuvalmedina.com/contact</loc>
         <lastmod>2023-02-26</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
+        <priority>0.1</priority>
     </url>
 </urlset>
